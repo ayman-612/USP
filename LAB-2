@@ -1,0 +1,192 @@
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ script
+Script started, output log file is 'typescript'.
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ touch testfile
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cat>testfile
+It's me, hi, I'm the problem, it's me
+At tea time, everybody agrees
+I'll stare directly at the sun but never in the mirror
+It must be exhausting, always rooting for the anti-hero
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cat testfile
+It's me, hi, I'm the problem, it's me
+At tea time, everybody agrees
+I'll stare directly at the sun but never in the mirror
+It must be exhausting, always rooting for the anti-hero
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ pwd
+/home/bmscecse
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cp testfile chap
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cat chap
+It's me, hi, I'm the problem, it's me
+At tea time, everybody agrees
+I'll stare directly at the sun but never in the mirror
+It must be exhausting, always rooting for the anti-hero
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ p testfile ^[[200~/home/bmscecse/dict
+p: command not found
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cp testfile /home/bmsce/dict
+cp: cannot create regular file '/home/bmsce/dict': No such file or directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cp testfile bmsce/dict
+cp: cannot create regular file 'bmsce/dict': No such file or directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ pwd
+/home/bmscecse
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cp /home/bmscecse/testfile /home/bmscecse/dict
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ pwd
+/home/bmscecse
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cp /home/bmscecse/test*  /home/bmscecse/Documents
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cp -i home/bmscecse/test* /home/bmscecse/Documents
+cp: cannot stat 'home/bmscecse/test*': No such file or directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cp -i /home/bmscecse/testfile /home/bmscecse/dict
+cp: overwrite '/home/bmscecse/dict/testfile'? yes
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cp -R /home/bmscecse/testfile /home/bmscecse/dict
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cat>testfile_2
+We don't deal with outsiders very well
+They say newcomers have a certain smell
+You have trust issues, not to mention
+They say they can smell your intentions
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cat testfile_2
+
+Command 'at' not found, but can be installed with:
+sudo apt install at
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ catrm testfile_2
+Command 'catrm' not found, did you mean:
+  command 'atrm' from deb at (3.2.5-1ubuntu1)
+  command 'catm' from deb mescc-tools (1.3-2)
+Try: sudo apt install <deb name>
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ rm testfile_2
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ touch testfile_3
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cp testfile testfile_3
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ rm -i /home/bmsce/dict
+rm: cannot remove '/home/bmsce/dict': No such file or directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ rm -i /home/bmscecse/dict
+rm: cannot remove '/home/bmscecse/dict': Is a directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ rm -i /home/bmscecse/dict
+rm: cannot remove '/home/bmscecse/dict': Is a directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ rmdir /home/bmscecse/dict
+rmdir: failed to remove '/home/bmscecse/dict': Directory not empty
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ rmdir -i /home/bmscecse/dict
+rmdir: invalid option -- 'i'
+Try 'rmdir --help' for more information.
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ rmdir /home/bmscecse/dict
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ rm /home/bmscecse/dict/*
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ mv testfile.txt mv chappp.txt
+mv: target 'chappp.txt' is not a directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ mv testfile mv chappp
+mv: target 'chappp' is not a directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ mv testfile chapppp
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ ls*.txt
+ls*.txt: command not found
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ ls
+chap  chapppp  Desktop  dict  Documents  Downloads  Music  Pictures  Public  snap  Templates  testfile_3  typescript  Videos
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ mv chapppp /home/bmscecse/dict
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ mv /home/bmcsecse/dict /home/bmsce/dicto
+mv: cannot stat '/home/bmcsecse/dict': No such file or directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ mv /home/bmcsecse/dict dicto
+mv: cannot stat '/home/bmcsecse/dict': No such file or directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ mv dict dicto
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ file testfile
+testfile: cannot open `testfile' (No such file or directory)
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ file chapppp
+chapppp: cannot open `chapppp' (No such file or directory)
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ pwd
+/home/bmscecse
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ file testfile_3
+testfile_3: ASCII text
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ wc -l testfile_3
+4 testfile_3
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ wc -l chapppp
+wc: chapppp: No such file or directory
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ wc -l chap
+4 chap
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ od -b chap
+0000000 111 164 047 163 040 155 145 054 040 150 151 054 040 111 047 155
+0000020 040 164 150 145 040 160 162 157 142 154 145 155 054 040 151 164
+0000040 047 163 040 155 145 012 101 164 040 164 145 141 040 164 151 155
+0000060 145 054 040 145 166 145 162 171 142 157 144 171 040 141 147 162
+0000100 145 145 163 012 111 047 154 154 040 163 164 141 162 145 040 144
+0000120 151 162 145 143 164 154 171 040 141 164 040 164 150 145 040 163
+0000140 165 156 040 142 165 164 040 156 145 166 145 162 040 151 156 040
+0000160 164 150 145 040 155 151 162 162 157 162 012 111 164 040 155 165
+0000200 163 164 040 142 145 040 145 170 150 141 165 163 164 151 156 147
+0000220 054 040 141 154 167 141 171 163 040 162 157 157 164 151 156 147
+0000240 040 146 157 162 040 164 150 145 040 141 156 164 151 055 150 145
+0000260 162 157 012
+0000263
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ od -b chap
+0000000 111 164 047 163 040 155 145 054 040 150 151 054 040 111 047 155
+0000020 040 164 150 145 040 160 162 157 142 154 145 155 054 040 151 164
+0000040 047 163 040 155 145 012 101 164 040 164 145 141 040 164 151 155
+0000060 145 054 040 145 166 145 162 171 142 157 144 171 040 141 147 162
+0000100 145 145 163 040 136 114 040 136 115 012 111 047 154 154 040 163
+0000120 164 141 162 145 040 144 151 162 145 143 164 154 171 040 141 164
+0000140 040 164 150 145 040 163 165 156 040 142 165 164 040 156 145 166
+0000160 145 162 040 151 156 040 164 150 145 040 155 151 162 162 157 162
+0000200 012 111 164 040 155 165 163 164 040 142 145 040 145 170 150 141
+0000220 165 163 164 151 156 147 054 040 141 154 167 141 171 163 040 162
+0000240 157 157 164 151 156 147 040 146 157 162 040 164 150 145 040 141
+0000260 156 164 151 055 150 145 162 157 012
+0000271
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ od -c chap
+0000000   I   t   '   s       m   e   ,       h   i   ,       I   '   m
+0000020       t   h   e       p   r   o   b   l   e   m   ,       i   t
+0000040   '   s       m   e  \n   A   t       t   e   a       t   i   m
+0000060   e   ,       e   v   e   r   y   b   o   d   y       a   g   r
+0000100   e   e   s       ^   L       ^   M  \n   I   '   l   l       s
+0000120   t   a   r   e       d   i   r   e   c   t   l   y       a   t
+0000140       t   h   e       s   u   n       b   u   t       n   e   v
+0000160   e   r       i   n       t   h   e       m   i   r   r   o   r
+0000200  \n   I   t       m   u   s   t       b   e       e   x   h   a
+0000220   u   s   t   i   n   g   ,       a   l   w   a   y   s       r
+0000240   o   o   t   i   n   g       f   o   r       t   h   e       a
+0000260   n   t   i   -   h   e   r   o  \n
+0000271
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ ^C
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ ^V
+: command not found
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ 
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ 
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ od -c chap
+0000000   I   t   '   s       m   e   ,       h   i   ,       I   '   m
+0000020       t   h   e       p   r   o   b   l   e   m   ,       i   t
+0000040   '   s       m   e  \n   A   t       t   e   a       t   i   m
+0000060   e   ,       e   v   e   r   y   b   o   d   y       a   g   r
+0000100   e   e   s   ^   L      \n   I   '   l   l       s   t   a   r
+0000120   e       d   i   r   e   c   t   l   y       a   t       t   h
+0000140   e       s   u   n       b   u   t       n   e   v   e   r    
+0000160   i   n       t   h   e       m   i   r   r   o   r  \n   I   t
+0000200       m   u   s   t       b   e       e   x   h   a   u   s   t
+0000220   i   n   g   ,       a   l   w   a   y   s       r   o   o   t
+0000240   i   n   g       f   o   r       t   h   e       a   n   t   i
+0000260   -   h   e   r   o  \n
+0000266
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ ^L
+bash: :s^L: substitution failed
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ cmp testfile_3 chap
+testfile_3 chap differ: byte 68, line 2
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ comm testfile_3 chap
+		It's me, hi, I'm the problem, it's me
+At tea time, everybody agrees
+	At tea time, everybody agrees^L 
+		I'll stare directly at the sun but never in the mirror
+		It must be exhausting, always rooting for the anti-hero
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ diff testfile_3 chap
+2c2
+< At tea time, everybody agrees
+---
+> At tea time, everybody agrees^L 
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ gzip testfile_3
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ gunzip testfile_3
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ gzip testfile_3
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ ls
+chap  Desktop  dicto  Documents  Downloads  Music  Pictures  Public  snap  Templates  testfile_3.gz  typescript  Videos
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ gunzip testfile_3
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ ls
+chap  Desktop  dicto  Documents  Downloads  Music  Pictures  Public  snap  Templates  testfile_3  typescript  Videos
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ script
+Script started, output log file is 'typescript'.
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ script
+Script started, output log file is 'typescript'.
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ typescript
+typescript: command not found
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ script end
+Script started, output log file is 'end'.
+bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC:~$ exit
+exit
+Script done.
