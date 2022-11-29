@@ -1,0 +1,14 @@
+Script started on 2022-11-29 12:11:56+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="203" LINES="55"]
+[?2004h]0;bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC: ~[01;32mbmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC[00m:[01;34m~[00m$ sh prgm4.sh XYZ emp.lst[4@Utkarsh[C[C[C[C[C[C[C[C[K[2@nano[C[C[C[C[C[C[C[C[C[2Psh[C[C[C[C[C[C[C[C[C John emp.lst[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksh three_numbers[K[K[K[K[K[K[K[K[K[K[K[K[Karea [K_of)[K_circle
+[?2004lEnter radius of circle:4
+Area of circle = 50.24
+[?2004h]0;bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC: ~[01;32mbmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC[00m:[01;34m~[00m$ sh are[K[K[Kthree_numbe[K[K[K[K[K[K[K[K[K[K[Kpos_neg_zero
+[?2004lEnter a number:-6
+negative
+[?2004h]0;bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC: ~[01;32mbmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC[00m:[01;34m~[00m$ sh pos_neg_zero[K[K[K[K[K[K[K[K[K[K[K[K[K [Kt[K three_ny[Kumbers
+[?2004lEnter three numbers:40 5 69
+69 is greater
+[?2004h]0;bmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC: ~[01;32mbmscecse@bmscecse-HP-Elite-Tower-600-G9-Desktop-PC[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2022-11-29 12:13:12+05:30 [COMMAND_EXIT_CODE="0"]
