@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Enter file name"
+read file
+if [ ! -f "$file" ]
+then
+        echo "File is shit and not valid"
+        exit 1
+fi
+echo "The number of lines in the file:"
+wc -l "$file"
+echo "The number of words in the file:"
+wc -w "$file"
+echo "The number of characters in the file:"
+wc -c "$file"
+
