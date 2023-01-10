@@ -56,15 +56,17 @@ echo "The end"
 7) List the files with hard links
    find . -type f -links +1 |tee list
    lp list
+   OR 
+   ls -li*
    
 8) Create a symbolic file on a existing file
-   ls -l catch,try
+   ln -s catch,try
    
 9) Change modification time and acces time using touch command
     touch -a -m -t [2201031231.12] count.sh
    
 10) Find files with inode number 13975 and print them
-    find . enum 13975 | tee list
+    find . -inum 13975 | tee list
     lp list
     
 11) Find all files with .c or .sh extension
